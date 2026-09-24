@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Webseite</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+        header {
+            background: #1f2937;
+            color: white;
+            padding: 20px;
+        }
+        nav {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #111827;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .button:hover {
+            background: #1d4ed8;
+        }
+        .section {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+        }
+        .contact {
+            text-align: center;
+            background: white;
+            padding: 50px 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #1f2937;
+            color: white;
+            margin-top: 40px;
+        }
+        @media (max-width: 700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Meine Webseite</div>
+            <div>
+                <a href="#ueber-mich">Über mich</a>
+                <a href="#angebote">Angebote</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Willkommen auf meiner Webseite 👋</h1>
+            <p>
+                Schön, dass du hier bist!
+                Hier kannst du dich, dein Projekt oder dein Unternehmen vorstellen.
+            </p>
+            <a class="button" href="#kontakt">Kontakt aufnehmen</a>
+        </section>
+        <section class="section" id="ueber-mich">
+            <h2>Über mich</h2>
+            <p style="text-align: center; max-width: 700px; margin: auto;">
+                Hier kannst du etwas über dich schreiben.
+                Zum Beispiel, wer du bist, was du machst und was Besucher
+                auf deiner Webseite erwartet.
+            </p>
+        </section>
+        <section class="section" id="angebote">
+            <h2>Was ich anbiete</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>💡 Idee</h3>
+                    <p>
+                        Beschreibe hier dein erstes Angebot oder
+                        deine erste Leistung.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>🚀 Projekt</h3>
+                    <p>
+                        Stelle hier ein Projekt oder eine besondere
+                        Dienstleistung vor.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>⭐ Qualität</h3>
+                    <p>
+                        Erkläre deinen Besuchern, was dich
+                        besonders macht.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="kontakt">
+            <h2>Kontakt</h2>
+            <p>
+                Du möchtest mich kontaktieren?
+            </p>
+            <br>
+            <a class="button" href="mailto:deine-email@example.com">
+                E-Mail schreiben
+            </a>
+        </section>
+    </main>
+    <footer>
+        © 2026 Meine Webseite – Alle Rechte vorbehalten.
+    </footer>
+</body>
+</html>
